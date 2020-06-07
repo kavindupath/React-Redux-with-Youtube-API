@@ -7,7 +7,7 @@ const VideoDetails = (props) => {
     }
 
     const videoId = props.video.id.videoId;
-   // const url = "https://www.youtube.com/embed" + videoID;  //same as below
+   // const url = "https://www.youtube.com/embed" + videoID;  //same as below. you can use this insted
     const url = `https://www.youtube.com/embed/${videoId}`;
 
     return (
