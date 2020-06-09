@@ -2,11 +2,11 @@ import React from "react";
 
 const VideoDetails = (props) => {
 
-    if(!props.video){
+    if(!props.FrontMainvideo){
         return <div> Loading.....</div>
     }
 
-    const videoId = props.video.id.videoId;
+    const videoId = props.FrontMainvideo.id.videoId;
    // const url = "https://www.youtube.com/embed" + videoID;  //same as below. you can use this insted
     const url = `https://www.youtube.com/embed/${videoId}`;
 
@@ -20,8 +20,8 @@ const VideoDetails = (props) => {
 
             <div className=" details">
 
-                <div>{props.video.snippet.title} </div>
-                <div>{props.video.snippet.description}</div>
+                <div>{props.FrontMainvideo.snippet.title} </div>
+                <div>{props.FrontMainvideo.snippet.description}</div>
             </div>
 
         </div>
